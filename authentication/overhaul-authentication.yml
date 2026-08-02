@@ -1,0 +1,49 @@
+generated: '2026-08-02'
+method: probed
+source: live probes of api.over-haul.com, app.over-haul.com and auth.over-haul.com
+status: not-publicly-documented
+notes: >-
+  Overhaul publishes no public authentication documentation for its Shipment, Device, Risk Event, ETA or FraudWatch
+  APIs — there is no developer portal, no API reference and no auth guide on over-haul.com, help.over-haul.com or any
+  discoverable subdomain. What follows is recorded from anonymous probes ONLY; it is observed infrastructure
+  behaviour, not a provider claim, and it is deliberately NOT wired as a `type: Authentication` pointer in apis.yml
+  because the provider does not document authentication publicly.
+summary:
+  types: []
+  api_key_in: []
+  oauth2_flows: []
+  documented_publicly: false
+schemes: []
+observations:
+- host: api.over-haul.com
+  finding: >-
+    Every anonymous request, at any path, returns HTTP 403 with body {"message":"Forbidden"} and
+    Content-Type application/json. This response body and shape is the AWS API Gateway default for a request missing a
+    required API key or authorizer credential, which indicates a credential-gated gateway but does NOT identify the
+    scheme (x-api-key, Lambda authorizer, IAM SigV4 and Cognito/JWT authorizers all produce it).
+  http_status: 403
+  confidence: medium
+- host: auth.over-haul.com
+  finding: >-
+    Resolves via CNAME to prod-azureadb2c-ejbgg5fee0g4fadp.a03.azurefd.net (Microsoft Entra External ID / Azure AD B2C
+    behind Azure Front Door), indicating Overhaul runs an OIDC-capable identity provider for its customer
+    applications. TLS on the vanity hostname fails certificate verification anonymously, and Azure AD B2C serves its
+    OIDC discovery document only under a tenant/policy path, so no /.well-known/openid-configuration could be read.
+    Whether the customer-facing APIs accept tokens from this IdP is not observable anonymously.
+  confidence: low
+- host: app.over-haul.com
+  finding: Single-page web application shell; the Overhaul Web Application login surface. No auth metadata exposed.
+  http_status: 200
+  confidence: high
+next_steps:
+- Request the API reference and auth guide from Overhaul (support@ / https://www.over-haul.com/support) to upgrade
+  this artifact to method-searched with real securityScheme detail.
+x-evidence:
+- fetched: '2026-08-02'
+  url: https://api.over-haul.com/
+  http_status: 403
+  content_type: application/json
+- fetched: '2026-08-02'
+  url: https://app.over-haul.com/
+  http_status: 200
+  content_type: text/html

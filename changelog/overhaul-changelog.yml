@@ -1,0 +1,56 @@
+generated: '2026-08-02'
+method: searched
+source: https://www.over-haul.com/product-updates
+scheme: dated-release-notes
+notes: >-
+  Overhaul publishes product release notes as a marketing "Product Updates" page grouped by season, with each entry on
+  its own /product-update/<slug> page carrying a publication date. There is no semantic version number, no API-level
+  changelog, and no breaking-change notice format; entries describe platform and product capability changes, not API
+  contract changes.
+current_version: null
+current_release: Summer 2026
+entries:
+- title: Shipment Connect Go
+  url: https://www.over-haul.com/product-update/shipment-connect-go
+  date: '2026-07-22'
+  release: Summer 2026
+  breaking: false
+  highlights: >-
+    Shipment capture from locations with minimal setup, with carrier and driver risk alerts and integration into
+    telematics and tracking systems.
+- title: FraudWatch and Approval Workflows
+  url: https://www.over-haul.com/product-update/fraudwatch-and-approval-workflows
+  date: '2026-07-22'
+  release: Summer 2026
+  breaking: false
+  highlights: >-
+    Surfaces carrier and driver risk earlier in the booking process, with an approver step at shipment creation.
+- title: Reporting and Compliance Visibility
+  url: https://www.over-haul.com/product-update/reporting-and-compliance
+  date: '2026-07-22'
+  release: Summer 2026
+  breaking: false
+  highlights: >-
+    Connects risk, compliance and performance data by shipment phase, improving visibility into compliance trends.
+- title: Shipment Connect
+  url: https://www.over-haul.com/product-update/shipment-connect
+  date: '2026-07-22'
+  release: Summer 2026
+  breaking: false
+  highlights: >-
+    Compares planned versus actual carrier information at pickup to detect mismatches and strengthen documentation
+    oversight.
+- title: Auto Platform Updates
+  url: https://www.over-haul.com/product-update/auto
+  date: '2026-07-22'
+  release: Summer 2026
+  breaking: false
+  highlights: >-
+    Improved ETAs, map views and filtering for delivery visibility, with simplified receiving and issue resolution.
+x-evidence:
+- fetched: '2026-08-02'
+  url: https://www.over-haul.com/product-updates
+  http_status: 200
+- fetched: '2026-08-02'
+  url: https://www.over-haul.com/product-update/fraudwatch-and-approval-workflows
+  http_status: 200

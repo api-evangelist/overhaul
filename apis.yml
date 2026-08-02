@@ -1,18 +1,126 @@
 aid: overhaul
 name: Overhaul
-description: 'Overhaul is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Overhaul is an Austin, Texas based supply-chain visibility, integrity and risk-management platform founded in 2016
+  that monitors and protects in-transit cargo for global enterprises across pharmaceuticals and life sciences,
+  consumer electronics, AI hardware, automotive, manufacturing, retail and food and beverage. The platform combines
+  data-agnostic multi-modal tracking (customer-owned or Overhaul-supplied IoT loggers, tags and sensors), real-time
+  risk scoring, cold-chain and compliance monitoring, and a 24/7 global risk operations response capability. Product
+  surfaces include Shipment Manager, Shipment Connect and Shipment Connect Go, Risk Monitor, FraudWatch carrier and
+  driver verification, PartView, VINView, InventoryView, DamageView, Asset Manager, SecureBOL and RiskGPT. Overhaul
+  markets a family of transportation and logistics APIs — Shipment, Device, Risk Event, ETA, and FraudWatch carrier
+  performance and risk scoring — sold as a tiered subscription plus standalone offerings, but publishes no public
+  developer portal, OpenAPI definition or self-serve API documentation; API access is provisioned to customers.
+image: https://cdn.prod.website-files.com/6949339236f925032ea775ce/697401be90430833dbdb2e13_OG%20-%20B.jpg
 url: https://raw.githubusercontent.com/api-evangelist/overhaul/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-harvest-source-url: https://forgeglobal.com/overhaul_stock/
+specificationVersion: '0.21'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
-- Company
-apis: []
+- supply-chain
+- supply-chain-visibility
+- logistics
+- transportation
+- cargo-security
+- risk-management
+- fraud-prevention
+- cold-chain
+- iot
+- track-and-trace
+- freight
+- compliance
+apis:
+- name: Overhaul Shipment API
+  description: >-
+    Create and manage shipments and receive status-based data updates, including risk summaries, driver details and
+    next-delivery insights. Marketed as part of Overhaul's tiered API subscription. No public reference documentation
+    is published; access is provisioned to Overhaul customers.
+  humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
+  baseURL: https://api.over-haul.com
+  tags:
+  - shipments
+  - supply-chain-visibility
+  - logistics
+  - transportation
+  properties:
+  - type: Blog
+    url: https://www.over-haul.com/blog/transportation-logistics-apis
+  - type: Support
+    url: https://www.over-haul.com/support
+- name: Overhaul Device API
+  description: >-
+    Real-time tracking across modes and regions using customer-owned IoT devices, loggers, tags and sensors or
+    Overhaul's recommended hardware, returning device status, location and associated shipment detail. Part of
+    Overhaul's tiered API subscription; no public reference documentation is published.
+  humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
+  baseURL: https://api.over-haul.com
+  tags:
+  - iot
+  - track-and-trace
+  - telematics
+  - supply-chain-visibility
+  properties:
+  - type: Blog
+    url: https://www.over-haul.com/blog/transportation-logistics-apis
+  - type: Support
+    url: https://www.over-haul.com/support
+- name: Overhaul Risk Event API
+  description: >-
+    Delivers shipment risk events and actionable insight, with configurable alerting driven by thresholds for hot
+    zones and route deviations. Part of Overhaul's tiered API subscription; no public reference documentation or
+    event/webhook catalog is published.
+  humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
+  baseURL: https://api.over-haul.com
+  tags:
+  - risk-management
+  - cargo-security
+  - alerts
+  - supply-chain-visibility
+  properties:
+  - type: Blog
+    url: https://www.over-haul.com/blog/transportation-logistics-apis
+  - type: Support
+    url: https://www.over-haul.com/support
+- name: Overhaul ETA API
+  description: >-
+    Predictive estimated-time-of-arrival service used to identify delivery delays in advance and optimise routing to
+    meet delivery windows. Marketed as a standalone offering rather than part of the tiered subscription; no public
+    reference documentation is published.
+  humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
+  baseURL: https://api.over-haul.com
+  tags:
+  - eta
+  - predictive-analytics
+  - logistics
+  - transportation
+  properties:
+  - type: Blog
+    url: https://www.over-haul.com/blog/transportation-logistics-apis
+  - type: Support
+    url: https://www.over-haul.com/support
+- name: Overhaul FraudWatch API
+  description: >-
+    Carrier and driver verification and risk-scoring service that lets shippers vet carriers before booking, receive
+    immediate notification when a suspicious driver or carrier is added to a shipment, and detect unauthorised double
+    brokering and unexpected carrier substitution. Marketed as offering API integration so risk scores and
+    verification tools can be consumed inside existing TMS workflows; no public reference documentation is published.
+  humanURL: https://www.over-haul.com/product/fraudwatch
+  baseURL: https://api.over-haul.com
+  tags:
+  - fraud-prevention
+  - carrier-vetting
+  - risk-management
+  - freight
+  properties:
+  - type: Website
+    url: https://www.over-haul.com/product/fraudwatch
+  - type: Blog
+    url: https://www.over-haul.com/blog/transportation-logistics-apis
+  - type: Support
+    url: https://www.over-haul.com/support
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -20,4 +128,39 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/overhaul_stock/
+  url: https://www.over-haul.com/
+- type: Blog
+  url: https://www.over-haul.com/resources?category_equal=%5B%22Blogs%22%5D
+- type: Support
+  url: https://www.over-haul.com/support
+- type: HelpCenter
+  url: https://help.over-haul.com/hc/en-us
+- type: Login
+  url: https://app.over-haul.com/
+- type: StatusPage
+  url: https://status.over-haul.com/
+- type: ChangeLog
+  url: https://www.over-haul.com/product-updates
+- type: TermsOfService
+  url: https://www.over-haul.com/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.over-haul.com/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/Over-haul
+- type: Lifecycle
+  url: lifecycle/overhaul-lifecycle.yml
+- type: ChangeLog
+  url: changelog/overhaul-changelog.yml
+- type: LLMsTxt
+  url: llms/overhaul-llms.txt
+- type: Conformance
+  url: conformance/overhaul-conformance.yml
+- type: DomainSecurity
+  url: security/overhaul-domain-security.yml
+- type: Packages
+  url: packages/overhaul-packages.yml
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1

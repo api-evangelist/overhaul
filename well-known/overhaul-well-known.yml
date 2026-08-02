@@ -1,0 +1,54 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* on every Overhaul host in apis.yml
+notes: >-
+  No /.well-known/ discovery documents are served by Overhaul. www.over-haul.com (Webflow) answers every
+  /.well-known/* path with an HTTP 404 "Invalid .well-known request" page. api.over-haul.com is an AWS API Gateway
+  that answers every anonymous request with HTTP 403 {"message":"Forbidden"}, including /.well-known/*.
+  app.over-haul.com and insights.over-haul.com are single-page applications whose catch-all route returns HTTP 200
+  with the same 1,159-byte HTML shell for every path — these 200s are NOT documents and are recorded as
+  spa_catch_all: true so a later run does not mistake them for hits.
+documents: []
+probes:
+- host: https://www.over-haul.com
+  results:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://over-haul.com
+  results:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://api.over-haul.com
+  gateway: aws-api-gateway
+  note: all paths return 403 {"message":"Forbidden"} without credentials
+  results:
+  - {path: /.well-known/security.txt, status: 403}
+  - {path: /.well-known/openid-configuration, status: 403}
+  - {path: /.well-known/oauth-authorization-server, status: 403}
+  - {path: /.well-known/api-catalog, status: 403}
+  - {path: /.well-known/ai-plugin.json, status: 403}
+  - {path: /.well-known/agent-card.json, status: 403}
+  - {path: /.well-known/agent.json, status: 403}
+- host: https://app.over-haul.com
+  spa_catch_all: true
+  note: >-
+    Returns HTTP 200 with an identical 1,159-byte HTML application shell for every /.well-known/* path. Rejected as a
+    false positive per the pipeline contract; no JSON document is served.
+  results:
+  - {path: /.well-known/security.txt, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/openid-configuration, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/oauth-authorization-server, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/api-catalog, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/ai-plugin.json, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/agent-card.json, status: 200, content_type: text/html, valid: false}
+  - {path: /.well-known/agent.json, status: 200, content_type: text/html, valid: false}

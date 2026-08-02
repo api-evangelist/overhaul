@@ -1,0 +1,36 @@
+generated: '2026-08-02'
+method: searched
+source: npm registry search, PyPI simple index, GitHub org github.com/Over-haul, over-haul.com docs surface
+notes: >-
+  No first-party Overhaul client library or SDK was found in any public package registry. The GitHub organisation
+  github.com/Over-haul (31 public repositories, description "Mobile Technologies for Truckers", blog www.over-haul.com,
+  location Austin) contains only forks of third-party open-source projects (swagger-ui, material-ui, devise_token_auth,
+  dd-trace-rb, coredns-kubenodes, e2d, cookiecutter, terraform-modules, rubocop-overhaul and similar) plus internal
+  infrastructure tooling — no client library for the Overhaul APIs is published. Consistent with the APIs being sold
+  as a customer-provisioned subscription with no public developer portal.
+packages: []
+registries_searched:
+- {registry: npm, query: overhaul, first_party_hits: 0}
+- {registry: npm, query: over-haul, first_party_hits: 0}
+- {registry: pypi, query: overhaul, status: 404}
+- {registry: pypi, query: over-haul, status: 404}
+- {registry: github, org: Over-haul, public_repos: 31, first_party_client_libraries: 0}
+mobile_apps:
+- name: 'Overhaul: Shipment Connect'
+  platform: android
+  url: https://play.google.com/store/apps/details?id=com.rmobot
+  official: true
+- name: Overhaul Driver Connect
+  platform: ios
+  url: https://apps.apple.com/us/app/-/id1138821906
+  official: true
+x-evidence:
+- fetched: '2026-08-02'
+  url: https://api.github.com/orgs/Over-haul
+  http_status: 200
+- fetched: '2026-08-02'
+  url: https://registry.npmjs.org/-/v1/search?text=overhaul
+  http_status: 200
+- fetched: '2026-08-02'
+  url: https://pypi.org/simple/overhaul/
+  http_status: 404
