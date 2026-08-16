@@ -6,30 +6,34 @@
       "feed_url": "https://forgeglobal.com/overhaul_stock/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "fetch_failed: HTTPError"
     },
     {
       "source": "https://www.over-haul.com/support",
       "feed_url": "https://www.over-haul.com/support",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://www.over-haul.com/product/fraudwatch",
       "feed_url": "https://www.over-haul.com/product/fraudwatch",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://www.over-haul.com/",
       "feed_url": "https://www.over-haul.com/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-08-06T14:08:46Z"
+  "fetched": "2026-08-15T12:11:08Z"
 }
