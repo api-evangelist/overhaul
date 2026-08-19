@@ -16,7 +16,7 @@ url: https://raw.githubusercontent.com/api-evangelist/overhaul/refs/heads/main/a
 x-type: company
 x-source: harvest:secondary-market
 x-harvest-source-url: https://forgeglobal.com/overhaul_stock/
-specificationVersion: '0.21'
+specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
