@@ -11,6 +11,17 @@ description: >-
   markets a family of transportation and logistics APIs — Shipment, Device, Risk Event, ETA, and FraudWatch carrier
   performance and risk scoring — sold as a tiered subscription plus standalone offerings, but publishes no public
   developer portal, OpenAPI definition or self-serve API documentation; API access is provisioned to customers.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6949339236f925032ea775ce/697401be90430833dbdb2e13_OG%20-%20B.jpg
 url: https://raw.githubusercontent.com/api-evangelist/overhaul/refs/heads/main/apis.yml
 x-type: company
