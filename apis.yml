@@ -32,16 +32,16 @@ created: '2026-08-02'
 modified: '2026-08-02'
 tags:
 - Supply Chain
-- supply-chain-visibility
+- Supply Chain Visibility
 - Logistics
 - Transportation
 - cargo-security
-- risk-management
-- fraud-prevention
-- cold-chain
-- iot
+- Risk Management
+- Fraud Prevention
+- Cold Chain
+- IoT
 - Track and Trace
-- freight
+- Freight
 - Compliance
 tags_raw:
 - supply-chain
@@ -65,8 +65,8 @@ apis:
   humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
   baseURL: https://api.over-haul.com
   tags:
-  - shipments
-  - supply-chain-visibility
+  - Shipments
+  - Supply Chain Visibility
   - Logistics
   - Transportation
   tags_raw:
@@ -87,10 +87,10 @@ apis:
   humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
   baseURL: https://api.over-haul.com
   tags:
-  - iot
+  - IoT
   - Track and Trace
-  - telematics
-  - supply-chain-visibility
+  - Telematics
+  - Supply Chain Visibility
   tags_raw:
   - iot
   - track-and-trace
@@ -109,10 +109,10 @@ apis:
   humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
   baseURL: https://api.over-haul.com
   tags:
-  - risk-management
+  - Risk Management
   - cargo-security
   - Alerts
-  - supply-chain-visibility
+  - Supply Chain Visibility
   tags_raw:
   - risk-management
   - cargo-security
@@ -131,8 +131,8 @@ apis:
   humanURL: https://www.over-haul.com/blog/transportation-logistics-apis
   baseURL: https://api.over-haul.com
   tags:
-  - eta
-  - predictive-analytics
+  - ETA
+  - Predictive Analytics
   - Logistics
   - Transportation
   tags_raw:
@@ -154,10 +154,10 @@ apis:
   humanURL: https://www.over-haul.com/product/fraudwatch
   baseURL: https://api.over-haul.com
   tags:
-  - fraud-prevention
+  - Fraud Prevention
   - carrier-vetting
-  - risk-management
-  - freight
+  - Risk Management
+  - Freight
   tags_raw:
   - fraud-prevention
   - carrier-vetting
