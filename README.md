@@ -64,5 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Overhaul is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/overhaul_stock/
+Overhaul is an Austin, Texas based supply-chain visibility, integrity and risk-management platform founded in 2016 that monitors and protects in-transit cargo for global enterprises across pharmaceuticals and life sciences, consumer electronics, AI hardware, automotive, manufacturing, retail and food and beverage. The platform combines data-agnostic multi-modal tracking (customer-owned or Overhaul-supplied IoT loggers, tags and sensors), real-time risk scoring, cold-chain and compliance monitoring, and a 24/7 global risk operations response capability. Product surfaces include Shipment Manager, Shipment Connect and Shipment Connect Go, Risk Monitor, FraudWatch carrier and driver verification, PartView, VINView, InventoryView, DamageView, Asset Manager, SecureBOL and RiskGPT. Overhaul markets a family of transportation and logistics APIs — Shipment, Device, Risk Event, ETA, and FraudWatch carrier performance and risk scoring — sold as a tiered subscription plus standalone offerings, but publishes no public developer portal, OpenAPI definition or self-serve API documentation; API access is provisioned to customers.
+
+**Areas:** Supply Chain · Supply Chain Visibility · Logistics · Transportation · cargo-security · Risk Management · Fraud Prevention · Cold Chain · IoT · Track and Trace · Freight · Compliance
+
+## Overhaul on APIs.io
+
+Everything profiled for Overhaul is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/overhaul/](https://apis.io/providers/overhaul/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Overhaul Shipment API](https://apis.io/apis/overhaul/overhaul-shipment-api/) — Create and manage shipments and receive status-based data updates, including risk summaries, driver details and next-delivery insights. Marketed as part of…
+- [Overhaul Device API](https://apis.io/apis/overhaul/overhaul-device-api/) — Real-time tracking across modes and regions using customer-owned IoT devices, loggers, tags and sensors or Overhaul's recommended hardware, returning device…
+- [Overhaul Risk Event API](https://apis.io/apis/overhaul/overhaul-risk-event-api/) — Delivers shipment risk events and actionable insight, with configurable alerting driven by thresholds for hot zones and route deviations. Part of Overhaul's…
+- [Overhaul ETA API](https://apis.io/apis/overhaul/overhaul-eta-api/) — Predictive estimated-time-of-arrival service used to identify delivery delays in advance and optimise routing to meet delivery windows. Marketed as a…
+- [Overhaul FraudWatch API](https://apis.io/apis/overhaul/overhaul-fraudwatch-api/) — Carrier and driver verification and risk-scoring service that lets shippers vet carriers before booking, receive immediate notification when a suspicious…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Overhaul Authentication](https://apis.io/security/overhaul/overhaul-authentication/)
+- [Overhaul Domain Security](https://apis.io/security/overhaul/overhaul-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.over-haul.com/)
+- [Support](https://www.over-haul.com/support)
+- [Changelog](https://www.over-haul.com/product-updates)
+- [Blog](https://www.over-haul.com/resources?category_equal=%5B%22Blogs%22%5D)
+- [Terms of service](https://www.over-haul.com/legal/terms-and-conditions)
+- [Privacy policy](https://www.over-haul.com/legal/privacy-policy)
+- [GitHub](https://github.com/Over-haul)
+- [Status](https://status.over-haul.com/)
+
+## API Evangelist rating
+
+**Kin Score 22.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/overhaul/](https://apis.io/providers/overhaul/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Overhaul: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/overhaul/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
